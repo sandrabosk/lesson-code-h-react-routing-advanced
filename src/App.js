@@ -5,8 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ErrorPage from "./pages/ErrorPage";
 import { Switch, Route } from "react-router-dom";
-
-import ProjectDetailsPage from "./pages/ProjectDetailsPage"; // <== IMPORT
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
 function App() {
   return (

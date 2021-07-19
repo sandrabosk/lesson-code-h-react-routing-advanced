@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import projectsData from "./../projects-data.json";
-
-import { Link } from "react-router-dom";  // <== IMPORT
+import { Link } from "react-router-dom";
 
 function ProjectsPage() {
   const [projects, setProjects] = useState([]);

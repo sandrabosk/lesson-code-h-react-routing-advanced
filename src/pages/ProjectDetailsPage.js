@@ -1,6 +1,9 @@
 import projectsData from "./../projects-data.json";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 05-accessing-url-query-string
 import { useState, useEffect } from 'react';
 
 function ProjectDetailsPage(props) {

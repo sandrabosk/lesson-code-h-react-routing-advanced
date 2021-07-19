@@ -5,8 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ErrorPage from "./pages/ErrorPage";
 import { Switch, Route } from "react-router-dom";
-
-import ProjectDetailsPage from "./pages/ProjectDetailsPage"; // <== IMPORT
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
 function App() {
   return (
@@ -15,9 +14,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route exact path="/projects" component={ProjectsPage} />    {/* UPDATE */}
-
-        {/* ADD 👇 */}
+        <Route exact path="/projects" component={ProjectsPage} />
         <Route exact path="/projects/:projectId" component={ProjectDetailsPage} />
 
         <Route component={ErrorPage} />

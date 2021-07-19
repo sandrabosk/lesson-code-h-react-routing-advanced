@@ -5,8 +5,9 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ErrorPage from "./pages/ErrorPage";
 import { Switch, Route } from "react-router-dom";
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
-import ProjectDetailsPage from "./pages/ProjectDetailsPage"; // <== IMPORT
+import QueryStringExample from "./pages/QueryStringExample"; // <== IMPORT
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route exact path="/projects" component={ProjectsPage} />    {/* UPDATE */}
+        <Route exact path="/projects" component={ProjectsPage} />
+        <Route exact path="/projects/:projectId" component={ProjectDetailsPage} />
 
         {/* ADD 👇 */}
-        <Route exact path="/projects/:projectId" component={ProjectDetailsPage} />
+        <Route exact path="/example" component={QueryStringExample} />
 
         <Route component={ErrorPage} />
       </Switch>

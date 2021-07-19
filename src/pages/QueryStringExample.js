@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import queryString from 'query-string'
 
-function QueryStringExample() {
+function QueryStringExample(props) {
   useEffect(() => {
-    const values = queryString.parse(this.props.location.search)
+    const values = queryString.parse(props.location.search)
     console.log(values.place);
     console.log(values.destType);
   }, []);

@@ -9,4 +9,4 @@ function ProjectDetailsPage(props) {
   )
 }
 
-export default ProjectDetailsPage
+export default ProjectDetailsPage;

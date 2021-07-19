@@ -17,7 +17,7 @@ function ProjectDetailsPage(props) {
       {foundProject && (
         <>
           <h2>{foundProject.name}</h2>
-          <h3>Used technologies: {foundProject.technologies}</h3>
+          <h3>Tech Stack: {foundProject.technologies}</h3>
           <p>{foundProject.description}</p>
           <Link to="/projects">Back</Link>
         </>

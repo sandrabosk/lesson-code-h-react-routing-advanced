@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';            // <== IMPORT
 
 function ProjectDetailsPage(props) {
+  console.log(props)
   const [foundProject, setFoundProject] = useState(null);       // <== ADD
 
   // This effect depends on `props.match.params.projectId`.

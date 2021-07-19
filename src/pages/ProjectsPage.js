@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import projectsData from "./../projects-data.json";
-
-import { Link } from "react-router-dom";  // <== IMPORT
+import { Link } from "react-router-dom";
 
 function ProjectsPage() {
   const [projects, setProjects] = useState([]);
@@ -19,7 +18,7 @@ function ProjectsPage() {
         return (
           <div key={project._id} className="project">
             <h3>
-              <Link to={`/projects/${project._id}`}> {project.name} </Link>   {/* ADD */}
+              <Link to={`/projects/${project._id}`}> {project.name} </Link>
             </h3>
             <p>{project.technologies}</p>
           </div>

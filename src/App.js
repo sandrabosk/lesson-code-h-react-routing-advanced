@@ -6,8 +6,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ErrorPage from "./pages/ErrorPage";
 import { Switch, Route } from "react-router-dom";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
-
-import QueryStringExample from "./pages/QueryStringExample"; // <== IMPORT
+import QueryStringExample from "./pages/QueryStringExample";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Route path="/about" component={AboutPage} />
         <Route exact path="/projects" component={ProjectsPage} />
         <Route exact path="/projects/:projectId" component={ProjectDetailsPage} />
-
+        
         {/* ADD 👇 */}
         <Route exact path="/example" component={QueryStringExample} />
 
